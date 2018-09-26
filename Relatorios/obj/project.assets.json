@@ -5789,7 +5789,7 @@
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
-      "sha512": "HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
+      "sha512": "TUpOt9a1z4Xw54OV0TRJ8NapeAiM+mi2YFJ3KN0BQAkXdpx9+DiAvQG7UXWOxCpBJfQdVzHzYm+oamDFvMCRtQ==",
       "type": "package",
       "path": "microsoft.codeanalysis.analyzers/1.1.0",
       "files": [
@@ -12218,23 +12218,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Gui\\.nuget\\packages\\": {},
+    "C:\\Users\\Eddie\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gui\\Desktop\\git\\meu\\TesteShadowDomRazorAspNetMvc\\Relatorios\\Relatorios.csproj",
+      "projectUniqueName": "C:\\Users\\Eddie\\Desktop\\Projetos\\Meu\\TesteShadowDomRazorAspNetMvc\\Relatorios\\Relatorios.csproj",
       "projectName": "Relatorios",
-      "projectPath": "C:\\Users\\Gui\\Desktop\\git\\meu\\TesteShadowDomRazorAspNetMvc\\Relatorios\\Relatorios.csproj",
-      "packagesPath": "C:\\Users\\Gui\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gui\\Desktop\\git\\meu\\TesteShadowDomRazorAspNetMvc\\Relatorios\\obj\\",
+      "projectPath": "C:\\Users\\Eddie\\Desktop\\Projetos\\Meu\\TesteShadowDomRazorAspNetMvc\\Relatorios\\Relatorios.csproj",
+      "packagesPath": "C:\\Users\\Eddie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Eddie\\Desktop\\Projetos\\Meu\\TesteShadowDomRazorAspNetMvc\\Relatorios\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Gui\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Eddie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
