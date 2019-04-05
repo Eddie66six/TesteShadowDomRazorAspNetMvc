@@ -1,0 +1,54 @@
+﻿@RenderBody()
+<div id="renderBodyImpressao"></div>
+<script id="containerScriptImpressao">
+    thisScriptImpressao = document.getElementById('containerScriptImpressao');
+    indexImpressoes = 0;
+    arrayImpressoes = [];
+
+    @foreach (var item in ViewBag.Impressoes)
+    {
+        @:arrayImpressoes.push('@item');
+    }
+
+    bodyImpressao = document.createElement('div');
+    el = document.getElementById('renderBodyImpressao');
+    el.appendChild(bodyImpressao);
+    shadowImpressao = el.attachShadow({
+        mode: 'closed'
+    });
+
+    downloadPage(arrayImpressoes[indexImpressoes]);
+
+    function downloadPage(nome) {
+        var data = null;
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+
+        xhr.addEventListener("readystatechange", function () {
+            if (this.readyState === 4) {
+                var div = document.createElement('div');
+                div.id = nome;
+                div.innerHTML = this.responseText;
+                bodyImpressao.appendChild(div);
+                var x = div.getElementsByTagName("script");
+                for (var i = 0; i < x.length; i++) {
+                    eval(x[i].text);
+                }
+                indexImpressoes += 1;
+                if (arrayImpressoes.length > indexImpressoes)
+                    downloadPage(arrayImpressoes[indexImpressoes]);
+                else {
+                    shadowImpressao.appendChild(bodyImpressao);
+                    thisScriptImpressao.parentNode.removeChild(thisScriptImpressao);
+                }
+            }
+        });
+
+        xhr.open("GET", "https://localhost:44346/Teste/teste");
+        xhr.setRequestHeader("cache-control", "no-cache");
+        xhr.setRequestHeader("Postman-Token", "59fb4d92-3d39-4f1d-945c-1c96a153f511");
+
+        xhr.send(data);
+    }
+
+</script>

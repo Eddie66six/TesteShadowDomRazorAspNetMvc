@@ -70,3 +70,5 @@ C:\Users\Eddie\Desktop\Projetos\Meu\TesteShadowDomRazorAspNetMvc\Relatorios\obj\
 C:\Users\Eddie\Desktop\Projetos\Meu\TesteShadowDomRazorAspNetMvc\Relatorios\obj\Debug\netcoreapp2.1\Relatorios.dll
 C:\Users\Eddie\Desktop\Projetos\Meu\TesteShadowDomRazorAspNetMvc\Relatorios\obj\Debug\netcoreapp2.1\Relatorios.pdb
 C:\Users\Eddie\Desktop\Projetos\Meu\TesteShadowDomRazorAspNetMvc\Relatorios\obj\Debug\netcoreapp2.1\Relatorios.csproj.CopyComplete
+C:\Users\Eddie\Desktop\Projetos\Meu\TesteShadowDomRazorAspNetMvc\Relatorios\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutImpressao.g.cshtml.cs
+C:\Users\Eddie\Desktop\Projetos\Meu\TesteShadowDomRazorAspNetMvc\Relatorios\obj\Debug\netcoreapp2.1\Razor\Areas\Teste\Views\Impressao\Index.g.cshtml.cs

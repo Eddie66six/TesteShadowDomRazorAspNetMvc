@@ -1,5 +1,6 @@
 ﻿<div id="renderBody"></div>
 <script id="containerScript">
+    thisScript = document.getElementById('containerScript');
     body = `@RenderBody()`;
     scriptsLink = [];
     stylesLink = [];
@@ -15,8 +16,9 @@
     stylesLink.push('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
 
     myElement = document.getElementById('renderBody');
+    myElement.id = newGuid();
     shadow = myElement.attachShadow({
-        mode: 'open'
+        mode: 'closed'
     });
     scriptRef = document.createElement('script');
 
@@ -65,7 +67,13 @@
         delete scriptRef;
         delete index;
 
-        var thisScript = document.getElementById('containerScript');
         thisScript.parentNode.removeChild(thisScript);
+    }
+
+    function newGuid() {
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+            var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+        });
     }
 </script>
